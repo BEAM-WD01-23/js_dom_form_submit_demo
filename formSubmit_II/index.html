@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submit II</title>
+    <style>
+        #myForm{
+            width: 70%;
+            min-height: 270px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Submit II</h2>
+    <!-- id, name, profession, button -->
+    <form id="myForm">
+        <input type="number" placeholder="insert id ..." id="myId">
+        <input type="text" placeholder="insert name ..." id="myName">
+        <input type="text" placeholder="insert profession ..." id="myProfession">
+        <textarea id="myComment" cols="17" rows="5" placeholder="insert comment ..."></textarea>
+        <input type="submit" value="Insert" id="myBtn">
+    </form>
+
+    <!-- show the submitted data here -->
+    <p>Show the data below:</p>
+    <div id="message_field"></div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
